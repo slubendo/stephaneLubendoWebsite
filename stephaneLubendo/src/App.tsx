@@ -79,7 +79,7 @@ function App() {
           <Route path="about" element={<TechAbout />} />
           <Route path="contact" element={<TechContact />} />
         </Route>
-        <Route path="music" element={<MusicLayout />}>
+        <Route path="/music" element={<MusicLayout />}>
           <Route index element={<Music/>} />
           <Route path="production" element={<Productions />} />
           <Route path="rap" element={<Raps />} />
@@ -108,7 +108,6 @@ function App() {
           <Route path="accessories" element={<Accessories />} />
           <Route path="other" element={<Other />} />
         </Route>
-        <Route path="*" element={<div>404: Page not found</div>} />
       </Routes>
     </main>
    </BrowserRouter>
