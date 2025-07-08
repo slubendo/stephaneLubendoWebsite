@@ -79,7 +79,7 @@ function App() {
           <Route path="about" element={<TechAbout />} />
           <Route path="contact" element={<TechContact />} />
         </Route>
-        <Route path="music" element={<MusicLayout />}>
+        <Route path="/music" element={<MusicLayout />}>
           <Route index element={<Music/>} />
           <Route path="production" element={<Productions />} />
           <Route path="rap" element={<Raps />} />
