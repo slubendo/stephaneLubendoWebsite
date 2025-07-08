@@ -108,7 +108,6 @@ function App() {
           <Route path="accessories" element={<Accessories />} />
           <Route path="other" element={<Other />} />
         </Route>
-        <Route path="*" element={<div>404: Page not found</div>} />
       </Routes>
     </main>
    </BrowserRouter>
