@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #352208; /* Your primary dark brown */
+  --color-secondary: #7b6b43; /* Your primary muted green/brown */
+  --color-tertiary: #685634; /* Your primary darker green/brown */
+  --color-quaternary: #806443; /* Your primary muted brown */
+  --color-accent: #e1bb80; /* Your accent light tan */
+}

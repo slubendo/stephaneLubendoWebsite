@@ -53,6 +53,7 @@ function App() {
   return (
    <BrowserRouter>
     <main>
+      <div className="w-full h-screen bg-[url('https://picsum.photos/1200/300')] bg-cover bg-center">
       <Routes>
         <Route path="/" element={<HomeLayout />}>
           <Route index element={<Home />} />
@@ -109,6 +110,7 @@ function App() {
           <Route path="other" element={<Other />} />
         </Route>
       </Routes>
+      </div>
     </main>
    </BrowserRouter>
   )
