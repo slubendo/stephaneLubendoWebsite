@@ -1,7 +1,7 @@
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomeLayout from './routes/Home/HomeLayout'
-import Feed from './routes/Home/Feed'
+import Feed from './routes/Home/FeedPage'
 import Home from './routes/Home/Home'
 import Favorites from './routes/Home/Favorites'
 import Pictures from './routes/Home/Pictures'
@@ -53,7 +53,7 @@ function App() {
   return (
    <BrowserRouter>
     <main>
-      <div className="w-full h-screen bg-secondary -[url('https://picsum.photos/1200/300')] bg-cover bg-center">
+      <div className="w-full bg-secondary">
       <Routes>
         <Route path="/" element={<HomeLayout />}>
           <Route index element={<Home />} />
