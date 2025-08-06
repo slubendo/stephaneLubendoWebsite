@@ -52,7 +52,6 @@ function App() {
 
   return (
    <BrowserRouter>
-    <main>
       <div className="w-full bg-secondary">
       <Routes>
         <Route path="/" element={<HomeLayout />}>
@@ -111,7 +110,6 @@ function App() {
         </Route>
       </Routes>
       </div>
-    </main>
    </BrowserRouter>
   )
 }
