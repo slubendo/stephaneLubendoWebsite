@@ -1,9 +1,8 @@
 // import { useLocation } from "react-router-dom";
 import Connect from "./Connect";
-import HomePage from "./HomePage";
-import Login from "./Login";
+// import HomePage from "./HomePage";
 import Nav from "./Nav";
-import SideNav from "./SideNav";
+// import SideNav from "./SideNav";
 
 export default function Layout() {
 //   const location = useLocation();
@@ -11,10 +10,9 @@ export default function Layout() {
     return (
         <header>
             {/* <div>{location.pathname}</div> */}
-            <HomePage />
-            <Login />
+            {/* <HomePage /> */}
             <Nav />
-            <SideNav />
+            {/* <SideNav /> */}
             <Connect />
         </header>
     )

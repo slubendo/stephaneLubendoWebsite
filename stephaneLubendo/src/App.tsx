@@ -53,6 +53,7 @@ function App() {
   return (
    <BrowserRouter>
       <div className="w-full bg-secondary">
+        {/* primary */}
       <Routes>
         <Route path="/" element={<HomeLayout />}>
           <Route index element={<Home />} />
