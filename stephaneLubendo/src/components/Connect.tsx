@@ -18,6 +18,7 @@ export default function Connect() {
         <a  href="https://www.instagram.com/stephanelubendo/" target="_blank">
           <img src="" alt="" />
           Insta
+          
         </a>
       </div>
 
