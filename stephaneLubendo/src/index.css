@@ -6,4 +6,9 @@
   --color-tertiary: #685634; /* Your primary darker green/brown */
   --color-quaternary: #806443; /* Your primary muted brown */
   --color-accent: #e1bb80; /* Your accent light tan */
+  --color-test: #989691; /* Your accent light tan */
 }
+/* 
+body {
+  background: #e0e3ed;
+} */

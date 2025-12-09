@@ -1,3 +1,4 @@
+import { postInfo } from "../db";
 
 
 type AccordionCardProps = {
@@ -15,7 +16,7 @@ type AccordionCardProps = {
 export default function AccordionCard({width, pic, overlay, transition, text, rounded, tags }: AccordionCardProps) {
 
     width = 100
-    pic = "75"
+    pic = "/Banner.heic"
     overlay = true
     text = "75"
     rounded = "md"
@@ -40,7 +41,13 @@ export default function AccordionCard({width, pic, overlay, transition, text, ro
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent rounded-sm"></div>
 
             <div className="relative z-10 text-white p-4">
-            <h2>Overlay Content</h2>
+            <h2>{postInfo.title}</h2>
+            <p>postInfo.content</p>
+            <div>
+                <div>Like Button</div>
+                <div>By:{postInfo.createdBy}</div>
+                <div>By:{postInfo.topic}</div>
+            </div>
             </div>   
         </div>
 
@@ -50,15 +57,15 @@ export default function AccordionCard({width, pic, overlay, transition, text, ro
         <div className="flex w-full justify-center p-3">
             <div className="bg-white/20 rounded-sm m-1 flex justify-center items-center w-[45px] h-[45px]">
             <img src="" alt="" />
-            Insta
+            Icon
             </div>
             <div className="bg-white/20 rounded-sm m-1 flex justify-center items-center w-[45px] h-[45px]">
             <img src="" alt="" />
-            Insta
+            Icon
             </div>
             <div className="bg-white/20 rounded-sm m-1 flex justify-center items-center w-[45px] h-[45px]">
             <img src="" alt="" />
-            Insta
+            Icon
             </div>
         </div>
     )}
