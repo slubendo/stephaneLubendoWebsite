@@ -7,20 +7,55 @@ export default function Tech() {
     return (
 <main className="flex flex-col mx-auto w-[80vw] justify-center items-center pt-[77px]">
   {/* First grid */}
-  <div className="mx-auto w-full grid grid-cols-1 md:grid-cols-5 grid-rows-auto gap-2 min-h-[500px] mb-4">
-    <div className="flex flex-col justify-between bg-accent md:col-span-3 md:row-span-4">
-      <div className="h-[10%]">Full Stack Web Developer</div>
-      <div className="h-[15%]">Full Stack Web Developer</div>
-      <div className="h-[75%]">{postInfo.content}</div>
-      <div className="h-[25%] border-t border-tertiary">list of programmming lanuges that i am good with asFASFGASDGadfgmnksd adLKSndsdG
-      </div>
+ <div className="mx-auto w-full grid grid-cols-1 md:grid-cols-5 gap-4 min-h-[500px] mb-4">
+
+  {/* MAIN ARTICLE - left side */}
+  <div className="flex flex-col bg-accent/40 border border-black/10 rounded p-4 
+      md:col-span-3 md:row-span-4 leading-relaxed">
+
+    {/* Headline */}
+    <h1 className="font-serif text-3xl font-bold mb-3">
+      Full Stack Web Developer
+    </h1>
+
+    {/* Subheadline */}
+    <h2 className="font-serif text-xl font-semibold mb-4 text-black/70">
+      Full Stack Web Developer
+    </h2>
+
+    {/* Body Content */}
+    <div className="text-sm font-light mb-6">
+      {postInfo.content}
     </div>
 
-    <div className="bg-accent md:col-start-4 md:col-span-2 md:row-span-2">
-      <img src="/Banner2.HEIC" alt="" />
+    {/* Footer / Skills section */}
+    <div className="pt-3 border-t border-black/20 text-sm">
+      list of programmming lanuges that i am good with asFASFGASDGadfgmnksd adLKSndsdG
     </div>
-    <div className="bg-accent md:col-start-4 md:col-span-2 md:row-start-3 md:row-span-2">list of programmming lanuges that i am good with asFASFGASDGadfg</div>
   </div>
+
+  {/* RIGHT COLUMN — TOP IMAGE */}
+  <div className="bg-accent/40 border border-black/10 rounded p-2 
+      md:col-start-4 md:col-span-2 md:row-span-2 flex items-center justify-center">
+    <img src="/Banner2.HEIC" alt="" className="w-full h-auto rounded" />
+  </div>
+
+  {/* RIGHT COLUMN — LOWER ARTICLE */}
+  <div className="bg-accent/40 border border-black/10 rounded p-4 
+      md:col-start-4 md:col-span-2 md:row-start-3 md:row-span-2 leading-relaxed">
+
+    <h3 className="font-serif text-lg font-semibold mb-2">
+      Skills & Technologies
+    </h3>
+
+    <p className="text-sm font-light">
+      list of programmming lanuges that i am good with asFASFGASDGadfg
+    </p>
+
+  </div>
+
+</div>
+
 
   <Accordion />
 

@@ -16,7 +16,7 @@ type AccordionCardProps = {
 export default function AccordionCard({width, pic, overlay, transition, text, rounded, tags }: AccordionCardProps) {
 
     width = 100
-    pic = "/Banner.heic"
+    pic = ""
     overlay = true
     text = "75"
     rounded = "md"
@@ -32,24 +32,29 @@ export default function AccordionCard({width, pic, overlay, transition, text, ro
 
   return (
     <div className="min-w-3/8 sm:min-w-[15rem]  mx-2">
-        <div className="relative bg-cover bg-tertiary min-h-40 rounded-sm mb-2"
-        style={{
-            width: `calc(${width}%)`,
-            backgroundImage: pic ? `url(${pic})` : undefined,
-        }}> 
+        <div
+            className="relative flex bg-cover bg-accent/50 rounded-xl mb-2 min-h-40"
+            style={{
+                width: `calc(${width}%)`,
+                backgroundImage: pic ? `url(${pic})` : undefined,
+            }}
+            >
+            {/* Content wrapper */}
+            <div className="relative z-10 text-black p-4 flex flex-col justify-between w-full">
+                
+                {/* Top: Title */}
+                <h2>{postInfo.title}</h2>
 
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent rounded-sm"></div>
-
-            <div className="relative z-10 text-white p-4">
-            <h2>{postInfo.title}</h2>
-            <p>postInfo.content</p>
-            <div>
-                <div>Like Button</div>
-                <div>By:{postInfo.createdBy}</div>
-                <div>By:{postInfo.topic}</div>
+                {/* Bottom row */}
+                <div className="flex justify-between items-center">
+                <div className="w-[15px]">
+                    <img src="heart.svg" alt="" />
+                </div>
+                <div>{postInfo.createdBy}</div>
+                </div>
             </div>
-            </div>   
-        </div>
+            </div>
+
 
 
 

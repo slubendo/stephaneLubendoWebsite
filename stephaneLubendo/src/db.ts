@@ -9,7 +9,7 @@ export type SideNavKey = keyof typeof sideNav;
 
 
 export const postInfo = {
-    title: "Fantasy Series World Building:",
+    title: "Fantasy Series  Building",
     content: `
     
 Tyrek studied the man that sat down across from him, trying not to let his excitement show. The man looked strong, arrogant and going off the rings he had on his fingers rich. He’d been running this scam for a few weeks in this run down bar — this he thought could be the best mark yet. The man reached inside his coat and pulled out a small purse which he dropped on the table with a thump. Gold coins spilled out of the purse, a few hitting the floor. 
