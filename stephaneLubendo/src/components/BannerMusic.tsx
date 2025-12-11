@@ -1,4 +1,3 @@
-import { postInfo } from "../db";
 
 type BannerProps = {
   width?: number;           // Optional, for future responsive width
@@ -11,7 +10,7 @@ type BannerProps = {
   transition?: boolean;
 };
 
-export default function Banner({
+export default function BannerMusic({
   pic,
   fit,
   title,
@@ -40,22 +39,16 @@ export default function Banner({
       )}
 
       {/* Content */}
-      <div className="relative z-2 flex flex-col  h-min-[100%] justify-between p-8 sm:p-12 text-white">
-
-        {/* Title at top */}
-        <h1 className="text-3xl sm:text-5xl font-bold m-2 drop-shadow-lg">
+      <div className="absolute bottom-0 right-0 z-10 p-8 sm:p-12 text-white text-right flex flex-col items-end">
+        <h1 className="text-3xl sm:text-5xl font-bold mb-4 drop-shadow-lg">
           {title}
         </h1>
-
-        {/* Content at bottom */}
-        <p className="text-sm sm:text-lg max-w-lg drop-shadow-md mt-auto mb-2">
+        <p className="text-sm sm:text-lg max-w-lg drop-shadow-md">
+          {content}
         </p>
-        </div>
+      </div>
 
-
-
-
-     </div> 
+     </div>
 
 
   );

@@ -86,44 +86,75 @@ export default function Writing() {
 
 </div>
 
-         <div className="bg-tertiary mx-auto mt-2 w-[50%] min-w-[85%] sm:min-w-[65%] md:min-w-[55%] grid grid-cols-1 gap-3 md:[&>*]:h-[325px] [&>*]:h-[315px] border-accent">
-           <div className="border-t border-accent bg-accent/50  px-9 py-6">
-                <h2>{postInfo.title}</h2>
-                <p>{postInfo.content}</p>
-                <div>
-                  {/* <img src={postInfo.picture} alt="" /> */}
-                </div>
-                <div>
-                  <div>{postInfo.topic}</div>
-                  <div>{postInfo.createdBy}</div>
-                </div>
-            </div>
+        <div className="bg-tertiary mx-auto mt-4 w-full max-w-[750px] space-y-4">
 
-             <div className="border-t border-accent bg-accent/50 px-9 py-6">
-                <h2>{postInfo.title}</h2>
-                <p>{postInfo.content}</p>
-                <div>
-                  {/* <img src={postInfo.picture} alt="" /> */}
-                </div>
-                <div>
-                  <div>{postInfo.topic}</div>
-                  <div>{postInfo.createdBy}</div>
-                </div>
-            </div>
+  {/* Post */}
+  <div className="bg-accent/50 border border-accent px-6 py-5 grid grid-cols-1 gap-4">
+    
+    {/* Title Section */}
+    <div>
+      <h2 className="text-2xl font-bold uppercase tracking-wide">
+        {postInfo.title}
+      </h2>
+      <p className="text-sm text-black/70 mt-1">{postInfo.topic}</p>
+    </div>
 
-              <div className="border-t border-accent bg-accent/50 px-9 py-6">
-                <h2>{postInfo.title}</h2>
-                <p>{postInfo.content}</p>
-                <div>
-                  {/* <img src={postInfo.picture} alt="" /> */}
-                </div>
-                <div>
-                  <div>{postInfo.topic}</div>
-                  <div>{postInfo.createdBy}</div>
-                </div>
-            </div>
-         
+    {/* Image Section */}
+    {postInfo.picture && (
+      <div className="w-full h-[260px] bg-black/10 overflow-hidden">
+        <img 
+          src="mistborn.webp" 
+          alt="Post visual"
+          className="w-full h-full object-contain"
+        />
       </div>
+    )}
+
+    {/* Content Section */}
+    <div>
+      <p className="leading-relaxed text-lg">
+        {postInfo.content}
+      </p>
+    </div>
+
+    {/* Footer Info */}
+    <div className="flex justify-between items-center pt-4 border-t border-black/20">
+      <span className="text-sm font-semibold uppercase tracking-wide">
+        {postInfo.createdBy}
+      </span>
+      <span className="text-xs text-black/60">{new Date().toDateString()}</span>
+    </div>
+  </div>
+
+  {/* Duplicate for demo (you can loop this in real code) */}
+  <div className="bg-accent/50 border border-accent px-6 py-5 grid grid-cols-1 gap-4">
+    <div>
+      <h2 className="text-2xl font-bold uppercase tracking-wide">{postInfo.title}</h2>
+      <p className="text-sm text-black/70 mt-1">{postInfo.topic}</p>
+    </div>
+
+    {postInfo.picture && (
+      <div className="w-full h-[350px] bg-black/10 overflow-hidden">
+        <img 
+          src="cold.jpg" 
+          alt="Post visual"
+          className="w-full h-full object-contain"
+        />
+      </div>
+    )}
+
+    <div>
+      <p className="leading-relaxed text-lg">{postInfo.content}</p>
+    </div>
+
+    <div className="flex justify-between items-center pt-4 border-t border-black/20">
+      <span className="text-sm font-semibold uppercase tracking-wide">{postInfo.createdBy}</span>
+      <span className="text-xs text-black/60">{new Date().toDateString()}</span>
+    </div>
+  </div>
+  
+</div>
+
 </main>
 
     )
