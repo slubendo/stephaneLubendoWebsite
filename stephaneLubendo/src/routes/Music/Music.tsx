@@ -6,8 +6,7 @@ export default function Music() {
     return (
         <main className="mx-auto w-[80vw] pt-4 sm:pt-[77px] flex flex-col justify-center space-y-6">
     {/* Banner */}
-    <BannerMusic pic="/Beats.webp" fit="fit" title="Music Producer" content="Whether I'm producing beats, writing, or analyzing the craft of great artists,  
-      my goal is always the same: Create something that connects" />
+    <BannerMusic pic="/Beats.webp" fit="fit" title="Music Producer" content="Whether I'm producing beats, writing, or studying the craft of the artists who inspire me, my focus always starts in the same place: making something I can feel. If the music connects with others and grows into something bigger, that’s a blessing. But the foundation is always authenticity." />
 
     {/* Top grid */}
 <div className="mx-auto w-full max-w-[90vw] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 auto-rows-fr">
@@ -103,9 +102,9 @@ export default function Music() {
     <h2 className="text-2xl font-bold uppercase mb-3 tracking-wide">
       What I'm Listening To
     </h2>
-    <p className="text-sm mb-3">
-      Currently vibing to a mix of underground hip-hop, neo-soul, and electronic beats that spark creativity.
-    </p>
+    <p className="text-md mb-3">
+      I got Clipse Let God Sort Them Out on repeat. Pusha T and Malice reunite to deliver bars about their struggles with the streets and faith.
+     </p>
     <img src="/images.jpeg" alt="Current playlist" className="object-cover w-full h-[200px] lg:h-full border" />
   </div>
 

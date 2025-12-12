@@ -43,7 +43,7 @@ export default function BannerMusic({
         <h1 className="text-3xl sm:text-5xl font-bold mb-4 drop-shadow-lg">
           {title}
         </h1>
-        <p className="text-sm sm:text-lg max-w-lg drop-shadow-md">
+        <p className="text-sm sm:text-lg max-w-lg drop-shadow-md w-[150%]">
           {content}
         </p>
       </div>

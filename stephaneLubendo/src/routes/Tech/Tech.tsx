@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import { postInfo } from "../../db";
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import { AiOutlineMail } from "react-icons/ai";
 import AccordionTech from "../../components/AccordionTech";
@@ -23,20 +22,33 @@ export default function Tech() {
       Full Stack Web Developer
     </h1>
 
-    {/* Subheadline */}
-    <h2 className="font-serif text-xl font-semibold mb-4 text-black/70">
-      Full Stack Web Developer
-    </h2>
-
     {/* Body Content */}
-    <div className="text-sm font-light mb-6">
-      {postInfo.content}
-    </div>
+<div className="text-md font-light mb-6">
+
+  I’m a dedicated <span className="font-medium">Full Stack Software Engineer</span> and 
+  <span className="font-medium"> Quality Assurance Engineer</span> who loves turning ideas into reliable, user-focused digital products.
+  <br /><br />
+
+  I specialize in building full-featured web applications that are clean, scalable,  
+  and thoughtfully designed from front to back.
+  <br /><br />
+
+  With experience across modern frontend frameworks, backend systems, databases,  
+  and testing methodologies, I approach every project with a balance of creativity  
+  and technical precision. I care deeply about clean architecture, maintainable code,  
+  and solutions that hold up in the real world.
+  <br /><br />
+
+  My portfolio highlights a selection of applications I’ve built, each one  
+  reflecting my commitment to problem solving, usability, and continuous learning.  
+  These projects represent the work I’m most proud of and the growth I continue to chase  
+  as an engineer.
+
+</div>
+
 
     {/* Footer / Skills section */}
-    <div className="pt-3 border-t border-black/20 text-sm">
-      list of programmming lanuges that i am good with asFASFGASDGadfgmnksd adLKSndsdG
-    </div>
+
   </div>
 
   {/* RIGHT COLUMN — TOP IMAGE */}
@@ -50,12 +62,14 @@ export default function Tech() {
       md:col-start-4 md:col-span-2 md:row-start-3 md:row-span-2 leading-relaxed">
 
     <h3 className="font-serif text-lg font-semibold mb-2">
-      Skills & Technologies
-    </h3>
+  Favorite Pastimes
+</h3>
 
-    <p className="text-sm font-light">
-      list of programmming lanuges that i am good with asFASFGASDGadfg
-    </p>
+<p className="text-sm font-light">
+  When I’m not programming, I love spending time reading, exploring new places, and playing basketball.
+  These keep me inspired, active, and always learning something new.
+</p>
+
 
   </div>
 
@@ -69,20 +83,26 @@ export default function Tech() {
 <div className="bg-accent/40 flex-1 p-6 rounded-xl border border-black/10 flex flex-col min-h-[40vh]">
   <h2 className="font-serif text-2xl font-bold mb-4">Frontend</h2>
 
-  <p className="text-sm leading-relaxed mb-6">
-    I specialize in building fast, interactive UIs using 
-    <strong> React, TypeScript, Tailwind CSS</strong>, and modern tooling.
-  </p>
+<p className="text-sm leading-relaxed mb-6">
+  When it comes to frontend I enjoy building clean, responsive, and intuitive user interfaces.
+  I’m passionate about crafting experiences that feel smooth, look modern, and function seamlessly across devices.
+  My work blends strong design sense with solid engineering principles, ensuring every interface is both visually
+  appealing and performance driven. 
+</p>
+<h3 className="font-serif text-xl font-semibold mb-3">Key Frontend Skills</h3>
 
-  <h3 className="font-serif text-xl font-semibold mb-3">Key Frontend Skills</h3>
-  <ul className="list-disc ml-5 text-sm space-y-1 mb-6">
-    <li>React + Hooks</li>
-    <li>TypeScript</li>
-    <li>Tailwind CSS</li>
-    <li>Next.js</li>
-    <li>Zustand / Context API</li>
-  </ul>
-
+<ul className="grid grid-cols-2 gap-x-6 list-disc ml-5 text-sm space-y-1 mb-6">
+  <li>React + Hooks</li>
+  <li>TypeScript</li>
+  <li>JavaScript</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Next.js</li>
+  <li>Tailwind CSS</li>
+  <li>TanStack</li>
+  <li>Vite</li>
+  <li>Zustand / Context API</li>
+</ul>
 
 
 </div>
@@ -94,20 +114,30 @@ export default function Tech() {
 <div className="bg-accent/40 flex-1 p-6 rounded-xl border border-black/10 flex flex-col min-h-[40vh]">
   <h2 className="font-serif text-2xl font-bold mb-4">Backend</h2>
 
-  <p className="text-sm leading-relaxed mb-6">
-    I build scalable APIs and backend systems using 
-    <strong> Node.js, Express, SQL, NoSQL</strong>, and cloud tooling.
-  </p>
+<p className="text-sm leading-relaxed mb-6">
+  On the backend I implement reliable, scalable systems that make
+  applications run smoothly behind the scenes. I focus on building clean APIs, efficient
+  database structures, and robust server-side logic that supports real-world performance.
+  Whether I’m optimizing queries, architecting features, or ensuring data integrity,
+  I aim to create backend solutions that are fast, maintainable, and easy to understand.
+</p>
+
 
   <h3 className="font-serif text-xl font-semibold mb-3">Key Backend Skills</h3>
-  <ul className="list-disc ml-5 text-sm space-y-1 mb-6">
-    <li>Node.js + Express</li>
-    <li>Postgres & SQL Server</li>
-    <li>MongoDB + Mongoose</li>
-    <li>Drizzle ORM</li>
-    <li>Redis for caching</li>
-    <li>Docker & container workflow</li>
-  </ul>
+<ul className="grid grid-cols-2 gap-x-6 list-disc ml-5 text-sm space-y-1 mb-6">
+  <li>JavaScript</li>
+  <li>TypeScript</li>
+  <li>Python</li>
+  <li>C#</li>
+  <li>ASP.NET</li>
+  <li>AWS</li>
+  <li>REST API</li>
+  <li>Drizzle</li>
+  <li>SQL</li>
+  <li>MongoDB</li>
+  <li>Drizzle ORM</li>
+</ul>
+
 
 
 
