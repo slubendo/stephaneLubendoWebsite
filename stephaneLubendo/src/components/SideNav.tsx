@@ -12,8 +12,8 @@ export default function SideNav() {
   
     return (
 
-            <nav className="fixed z-50 top-[110px] max-w-[10%]">
-                <ul className="flex flex-col min-h-[calc(100vh/2)] justify-between =-start bg-accent/40 rounded-r-3xl rounded-l-md  px-[20%] pt-[15%] pb-[10%] shadow-md">
+            <nav className="fixed z-50 top-[130px] w-[8%]">
+                <ul className="flex flex-col min-h-[calc(100vh/2)] justify-between =-start bg-accent/80 rounded-r-3xl rounded-l-md  px-[20%] pt-[15%] pb-[10%] shadow-md">
                     <div>
                         {currentSideNav.map((item, index) => (
                             <li key={index} className="px-1 pb-2">

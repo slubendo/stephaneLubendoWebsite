@@ -51,8 +51,8 @@ import Other from './routes/Merch/Other'
 function App() {
 
   return (
+      <div className="w-full h-[100vh]">
    <BrowserRouter>
-      <div className="w-full bg-secondary">
         {/* primary */}
       <Routes>
         <Route path="/" element={<HomeLayout />}>
@@ -110,8 +110,8 @@ function App() {
           <Route path="other" element={<Other />} />
         </Route>
       </Routes>
-      </div>
    </BrowserRouter>
+      </div>
   )
 }
 

@@ -6,4 +6,13 @@
   --color-tertiary: #685634; /* Your primary darker green/brown */
   --color-quaternary: #806443; /* Your primary muted brown */
   --color-accent: #e1bb80; /* Your accent light tan */
+  --color-test: #F3F0E8; /* Your accent light tan */
+}
+
+body {
+  background:#685634;
+} 
+
+*, text, p, h2 {
+font-family: Georgia, serif;
 }
